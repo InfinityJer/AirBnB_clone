@@ -86,7 +86,7 @@ We made an instance for this class that is named "storage" and then immediately 
 The HBNB console supports the following commands:
 
 * create
- * Usage: create <class>
+  * Usage: create <class>
 
 Creates a new instance of a given class. The class' ID is printed and the instance is saved to the file file.json.
 
@@ -101,7 +101,7 @@ $ cat file.json ; echo ""
 
 
 * show
- * Usage: show <class> <id> or <class>.show(<id>)
+  * Usage: show <class> <id> or <class>.show(<id>)
 
 Prints the string representation of a class instance based on a given id.
 
@@ -119,7 +119,7 @@ $ ./console.py
 ```
 
 * destroy
- * Usage: destroy <class> <id> or <class>.destroy(<id>)
+  * Usage: destroy <class> <id> or <class>.destroy(<id>)
 
 Deletes a class instance based on a given id.
 
@@ -139,7 +139,7 @@ $ cat file.json ; echo ""
 ```
 
 * all
- * Usage: all or all <class> or <class>.all()
+  * Usage: all or all <class> or <class>.all()
 
 Prints the string representations of all instances of a given class.
 
@@ -166,7 +166,7 @@ d16b4805-8826-4828-9fed-655ffb1c2b50
 ```
 
 * count
- * Usage: count <class> or <class>.count()
+  * Usage: count <class> or <class>.count()
 
 Retrieves the number of instances of a given class.
 
@@ -188,7 +188,7 @@ $ ./console.py
 * update
   * Usage: update <class> <id> <attribute name> "<attribute value>" or <class>.update(<id>, <attribute name>, <attribute value>) or <class>.update( <id>, <attribute dictionary>).
 
-* Updates a class instance based on a given id with a given key/value attribute pair or dictionary of attribute pairs.
+Updates a class instance based on a given id with a given key/value attribute pair or dictionary of attribute pairs.
 
 ```
 $ ./console.py
