@@ -220,4 +220,5 @@ $ python3 unittest -m tests/test_console.py
 ```
 
 ## Authors ✒️
-* Jeremiah Kuria '<InfinityJer>'
+* Jeremiah Kuria - InfinityJer
+* Sahar Aguidi - HALOcination
