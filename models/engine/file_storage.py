@@ -1,6 +1,14 @@
 #!/usr/bin/python3
 """FileStorage module"""
+
 import json
+from models.base_model import BaseModel
+from models.user import User
+from models.state import State
+from models.city import City
+from models.place import Place
+from models.amenity import Amenity
+from models.review import Review
 
 class FileStorage:
     __file_path = "file.json"
@@ -31,4 +39,4 @@ class FileStorage:
                     del value["__class__"]
                     self.__objects[key] = globals()[class_name](**value)
         except FileNotFoundError:
-            pass
+            return
