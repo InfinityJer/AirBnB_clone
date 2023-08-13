@@ -74,7 +74,7 @@ class TestHBNBCommand_help(unittest.TestCase):
         h = ("Usage: all or all <class> or <class>.all()\n        "
              "retrieve all instances of a class"
              ".\n        in case no class is specified,\n"
-	     displays all instantiated "
+	 displays all instantiated "
              "objects.")
         with patch("sys.stdout", new=StringIO()) as output:
             self.assertFalse(HBNBCommand().onecmd("help all"))
