@@ -73,7 +73,7 @@ class TestHBNBCommand_help(unittest.TestCase):
     def test_help_all(self):
         h = ("Usage: all or all <class> or <class>.all()\n        "
              "retrieve all instances of a class"
-             ".\n        in case no class is specified,\n"
+             ".\n        in case no class is specified,
 	 displays all instantiated "
              "objects.")
         with patch("sys.stdout", new=StringIO()) as output:
