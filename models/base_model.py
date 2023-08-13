@@ -3,6 +3,8 @@
 
 import uuid
 from datetime import datetime
+from models.engine import storage
+
 
 class BaseModel:
     """Parent class BaseModel that defines attributes
@@ -36,6 +38,7 @@ class BaseModel:
             self.id = str(uuid.uuid4())
             self.created_at = datetime.now()
             self.updated_at = datetime.now()
+            storage.new(self)
 
     def __str__(self):
         """Returns string representation of an instance in
@@ -48,6 +51,7 @@ class BaseModel:
     def save(self):
         """method to update the updated_at attribute"""
         self.updated_at = datetime.now()
+        storage.save()
 
     def to_dict(self):
         """Method to return keys/value of __dict__ of the class instance
