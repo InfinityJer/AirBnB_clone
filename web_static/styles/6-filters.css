@@ -1,0 +1,34 @@
+/* Add styles for the .popover class in 6-filters.css */
+.popover {
+    display: none;
+    list-style-type: none;
+    background-color: #FAFAFA;
+    color: #484848;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.locations:hover .popover,
+.amenities:hover .popover {
+    display: block;
+}
+
+.popover h2 {
+    font-size: 16px;
+    margin: 10px 0;
+    padding-left: 10px;
+}
+
+.popover ul {
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.popover li {
+    margin-bottom: 5px;
+}
