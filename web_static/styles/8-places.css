@@ -1,0 +1,57 @@
+/* Add styles for the .place, .price_by_night, .information, .max_guest,
+.number_rooms, .number_bathrooms, .user, and .description classes in 8-places.css */
+.place {
+    border-radius: 4px;
+    border: 1px solid #FF5A5F;
+    padding: 20px;
+    margin: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.price_by_night {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FF5A5F;
+    color: white;
+    border: 4px solid #FF5A5F;
+    border-radius: 4px;
+    min-width: 60px;
+    height: 60px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.information {
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 10px 0;
+}
+
+.max_guest,
+.number_rooms,
+.number_bathrooms {
+    width: 100px;
+    text-align: center;
+}
+
+.max_guest i,
+.number_rooms i,
+.number_bathrooms i {
+    margin-bottom: 5px;
+}
+
+.user {
+    margin-top: 10px;
+}
+
+.description {
+    margin-top: 20px;
+}
