@@ -1,0 +1,23 @@
+/* Add styles for the .locations and .amenities classes in 5-filters.css */
+.locations,
+.amenities {
+    height: 100%;
+    width: 25%;
+    float: left;
+    border-right: 1px solid #DDDDDD;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.locations h3,
+.amenities h3 {
+    font-weight: 600;
+}
+
+.locations h4,
+.amenities h4 {
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
